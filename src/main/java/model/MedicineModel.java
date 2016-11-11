@@ -7,14 +7,20 @@ import org.bson.Document;
 import org.bson.types.ObjectId;
 import org.codehaus.jackson.annotate.JsonProperty;
 
+import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement
 public class MedicineModel {
+    @XmlElement
     private ObjectId id;
-    private String medicineName;
+    @XmlElement
+    public String medicineName;
+    @XmlElement
     private String indication;
+    @XmlElement
     private String contraindication;
+    @XmlElement
     private String salesForm;
 
     public MedicineModel(
@@ -55,7 +61,7 @@ public class MedicineModel {
 
     @JsonProperty("id")
     public String getIdAsString() {
-        return id.toString();
+        return id == null ? "" : id.toString();
     }
 
     @JsonProperty("name")
