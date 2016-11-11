@@ -10,6 +10,9 @@ import org.bson.types.ObjectId;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.LinkedList;
 
 @Path("/documents")
@@ -50,6 +53,17 @@ public class MedecineService {
         return Response.status(200).entity(new ErrorModel(false)).build();
     }
 
+    @GET
+    @Path("/delete")
+    @Produces(MediaType.APPLICATION_JSON + ";charset=utf-8")
+    public Response deleteDocuments(@QueryParam("ids") String ids) {
+        DBHelper dbHelper = new DBHelperImpl();
+
+        dbHelper.deleteDocuments(ids.split(","));
+
+        return Response.status(200).entity(new ErrorModel(false)).build();
+    }
+
     @POST
     @Path("/update/{id}")
     @Produces(MediaType.APPLICATION_JSON + ";charset=utf-8")
@@ -79,7 +93,7 @@ public class MedecineService {
                 filteredDocuments.add(model);
             }
         }
-        
+
         dbHelper.closeConnection();
 
         return Response.status(200).entity(filteredDocuments).build();

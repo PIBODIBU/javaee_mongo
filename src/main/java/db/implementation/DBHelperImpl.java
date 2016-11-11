@@ -12,6 +12,7 @@ import model.MedicineModel;
 import org.bson.Document;
 import org.bson.types.ObjectId;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 
 public class DBHelperImpl implements DBHelper {
@@ -96,6 +97,12 @@ public class DBHelperImpl implements DBHelper {
 
     public void deleteDocument(String docId) {
         getCollection().deleteOne(new Document(Config.DB.COLUMN_ID, new ObjectId(docId)));
+    }
+
+    public void deleteDocuments(String[] ids) {
+        for (int i = 0; i < ids.length; i++) {
+            getCollection().deleteOne(new Document(Config.DB.COLUMN_ID, new ObjectId(ids[i])));
+        }
     }
 
     public void addDocument(final MedicineModel model) {

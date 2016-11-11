@@ -7,6 +7,7 @@ import com.sun.istack.internal.Nullable;
 import model.MedicineModel;
 import org.bson.Document;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 
 public interface DBHelper {
@@ -37,6 +38,8 @@ public interface DBHelper {
     void addDocument(final MedicineModel model);
 
     void deleteDocument(final String docId);
+
+    void deleteDocuments(final String[] ids);
 
     void updateDocument(final String docId, final MedicineModel model);
 }
