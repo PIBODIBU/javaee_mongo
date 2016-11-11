@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ISSD_3_JAVA_EE:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="simple-java-ee-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="ISSD_3_JAVA_EE:war exploded" />
+    </root>
+  </artifact>
+</component>
