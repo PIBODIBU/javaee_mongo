@@ -93,8 +93,6 @@ public class DocListServlet extends HttpServlet {
 
     @Override
     public void destroy() {
-        dbHelper.closeConnection();
-
         super.destroy();
     }
 }

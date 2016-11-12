@@ -26,7 +26,6 @@ public class MedecineService {
     public Response getAllDocuments() {
         DBHelper dbHelper = new DBHelperImpl();
         LinkedList<MedicineModel> models = dbHelper.getAllDocuments();
-        dbHelper.closeConnection();
 
         return Response.status(200).entity(models).build();
     }
@@ -37,7 +36,6 @@ public class MedecineService {
     public Response getDocumentById(@PathParam("id") String docId) {
         DBHelper dbHelper = new DBHelperImpl();
         MedicineModel model = dbHelper.getDocumentById(docId);
-        dbHelper.closeConnection();
 
         return Response.status(200).entity(model).build();
     }
@@ -48,7 +46,6 @@ public class MedecineService {
     public Response deleteDocument(@PathParam("id") String docId) {
         DBHelper dbHelper = new DBHelperImpl();
         dbHelper.deleteDocument(docId);
-        dbHelper.closeConnection();
 
         return Response.status(200).entity(new ErrorModel(false)).build();
     }
@@ -75,7 +72,6 @@ public class MedecineService {
         DBHelper dbHelper = new DBHelperImpl();
         MedicineModel model = new MedicineModel(new ObjectId(docId), name, indication, contraindication, salesForm);
         dbHelper.updateDocument(docId, model);
-        dbHelper.closeConnection();
 
         return Response.status(200).entity(model).build();
     }
@@ -93,8 +89,6 @@ public class MedecineService {
                 filteredDocuments.add(model);
             }
         }
-
-        dbHelper.closeConnection();
 
         return Response.status(200).entity(filteredDocuments).build();
     }
