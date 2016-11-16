@@ -5,6 +5,7 @@
 <%@ page import="servlet.DocListServlet" %>
 <%@ page import="java.util.LinkedList" %>
 <%@ page import="servlet.InfoServlet" %>
+<%@ page import="org.bson.Document" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" %>
 
 <html>
@@ -13,7 +14,7 @@
     </title>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.teal-deep_purple.min.css"/>
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.deep_purple-amber.min.css"/>
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
     <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
 </head>
@@ -25,8 +26,7 @@
     .mdl-layout__content {
         width: 100%;
         max-width: 100%;
-        display: block;
-        padding: 16px;
+        margin-top: 16px;
     }
 
     .mdl-data-table {

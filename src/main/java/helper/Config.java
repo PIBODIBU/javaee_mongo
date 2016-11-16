@@ -10,6 +10,7 @@ public class Config {
         public static final String COLUMN_ID_HUMAN = "Ідентифікатор документу";
         public static final String COLUMN_ID = "_id";
         public static final String COLUMN_NAME = "Назва препарату";
+        public static final String COLUMN_DESCRIPTION = "Опис препарату";
         public static final String COLUMN_INDICATION = "Показання для застосування";
         public static final String COLUMN_CONTRAINDICATION = "Протипоказання";
         public static final String COLUMN_SALES_FORM = "Форма продажу";

@@ -76,6 +76,21 @@ public class MedecineService {
         return Response.status(200).entity(model).build();
     }
 
+    @POST
+    @Path("/add")
+    @Produces(MediaType.APPLICATION_JSON + ";charset=utf-8")
+    public Response addDocument(@FormParam("name") String name,
+                                @FormParam("description") String description,
+                                @FormParam("indication") String indication,
+                                @FormParam("contraindication") String contraindication,
+                                @FormParam("sales_form") String salesForm) {
+        DBHelper dbHelper = new DBHelperImpl();
+        MedicineModel model = new MedicineModel(null, name, indication, contraindication, salesForm);
+        dbHelper.addDocument(model);
+
+        return Response.status(200).entity(new ErrorModel(false)).build();
+    }
+
     @GET
     @Path("/search")
     @Produces(MediaType.APPLICATION_JSON + ";charset=utf-8")
