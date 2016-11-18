@@ -79,6 +79,7 @@
                     <assembleDirectory>target</assembleDirectory>
                     <programs>
                         <program>
+                            <mainClass>launch.Main</mainClass>
                             <name>webapp</name>
                         </program>
                     </programs>

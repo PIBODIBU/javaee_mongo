@@ -72,7 +72,7 @@
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="78">
-              <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+              <caret line="81" column="49" selection-start-line="81" selection-start-column="46" selection-end-line="81" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -1147,7 +1147,7 @@
       <workItem from="1479025855273" duration="3136000" />
       <workItem from="1479299045174" duration="3543000" />
       <workItem from="1479334359874" duration="5213000" />
-      <workItem from="1479475767807" duration="2219000" />
+      <workItem from="1479475767807" duration="2294000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1478827289471</created>
@@ -1226,11 +1226,18 @@
       <option name="project" value="LOCAL" />
       <updated>1479477796737</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="pom.xml build config edits">
+      <created>1479478020979</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1479478020979</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62771000" />
+    <option name="totallyTimeSpent" value="62846000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
@@ -1300,7 +1307,8 @@
     <MESSAGE value="Procfile added" />
     <MESSAGE value="Procfile edits" />
     <MESSAGE value="pom.xml build config" />
-    <option name="LAST_COMMIT_MESSAGE" value="pom.xml build config" />
+    <MESSAGE value="pom.xml build config edits" />
+    <option name="LAST_COMMIT_MESSAGE" value="pom.xml build config edits" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1721,7 +1729,7 @@
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
-          <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+          <caret line="81" column="49" selection-start-line="81" selection-start-column="46" selection-end-line="81" selection-end-column="50" />
           <folding />
         </state>
       </provider>
