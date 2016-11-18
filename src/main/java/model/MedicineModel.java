@@ -1,7 +1,5 @@
 package model;
 
-import com.sun.istack.internal.NotNull;
-import com.sun.istack.internal.Nullable;
 import helper.Config;
 import org.bson.Document;
 import org.bson.types.ObjectId;
@@ -64,8 +62,7 @@ public class MedicineModel {
                 .append(Config.DB.COLUMN_SALES_FORM, getSalesForm());
     }
 
-    @Nullable
-    public static MedicineModel fromMongoDocument(@NotNull final Document document) {
+    public static MedicineModel fromMongoDocument(final Document document) {
         return new MedicineModel(
                 document.getObjectId(Config.DB.COLUMN_ID),
                 document.getString(Config.DB.COLUMN_NAME),

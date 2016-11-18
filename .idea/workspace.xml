@@ -2,7 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a62a1b9c-fd0b-41da-ba5c-1dc68d6e9651" name="Default" comment="New API endpoints">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT.war" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/classes/api/MedecineService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/classes/db/DBHelper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/classes/db/implementation/DBHelperImpl$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/classes/db/implementation/DBHelperImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/classes/helper/Config$DB.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/classes/helper/Config.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/classes/model/ErrorModel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/classes/model/MedicineModel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/classes/servlet/DocListServlet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/classes/servlet/InfoServlet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/lib/activation-1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/lib/asm-3.3.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/lib/jackson-core-asl-1.9.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/lib/jackson-jaxrs-1.9.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/lib/jackson-mapper-asl-1.9.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/lib/jackson-xc-1.9.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/lib/javaee-api-7.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/lib/javax.mail-1.5.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/lib/jaxb-api-2.2.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/lib/jaxb-impl-2.2.3-1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/lib/jersey-bundle-1.19.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/lib/jersey-core-1.19.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/lib/jersey-json-1.19.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/lib/jersey-multipart-1.19.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/lib/jersey-server-1.19.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/lib/jettison-1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/lib/json-20160212.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/lib/jsr311-api-1.1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/lib/mimepull-1.9.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/lib/mongo-java-driver-3.3.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/lib/stax-api-1.0-2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/db_info.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/doc_list.jsp" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/db/DBHelper.class" afterPath="$PROJECT_DIR$/target/classes/db/DBHelper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/db/implementation/DBHelperImpl$1.class" afterPath="$PROJECT_DIR$/target/classes/db/implementation/DBHelperImpl$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/db/implementation/DBHelperImpl.class" afterPath="$PROJECT_DIR$/target/classes/db/implementation/DBHelperImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/model/MedicineModel.class" afterPath="$PROJECT_DIR$/target/classes/model/MedicineModel.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/db/DBHelper.java" afterPath="$PROJECT_DIR$/src/main/java/db/DBHelper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/db/implementation/DBHelperImpl.java" afterPath="$PROJECT_DIR$/src/main/java/db/implementation/DBHelperImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/model/MedicineModel.java" afterPath="$PROJECT_DIR$/src/main/java/model/MedicineModel.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -35,45 +78,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DBHelperImpl.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DBHelperImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/db/implementation/DBHelperImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="69" column="46" selection-start-line="69" selection-start-column="46" selection-end-line="69" selection-end-column="46" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#1125#1126#0" expanded="false" />
-                <element signature="e#1159#1160#0" expanded="false" />
-                <element signature="e#1587#1588#0" expanded="false" />
-                <element signature="e#1676#1677#0" expanded="false" />
-                <element signature="e#1746#1747#0" expanded="false" />
-                <element signature="e#1779#1780#0" expanded="false" />
-                <element signature="e#2370#2371#0" expanded="false" />
-                <element signature="e#2454#2455#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DocListServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/servlet/DocListServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1056">
-              <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#4951#4952#0" expanded="false" />
-                <element signature="e#4982#4983#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MedecineService.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/api/MedecineService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+            <state relative-caret-position="112">
+              <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -82,33 +91,11 @@
       <file leaf-file-name="MedicineModel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/model/MedicineModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="44" column="31" selection-start-line="44" selection-start-column="31" selection-end-line="44" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#2506#2507#0" expanded="false" />
-                <element signature="e#2531#2532#0" expanded="false" />
-                <element signature="e#2592#2593#0" expanded="false" />
-                <element signature="e#2646#2647#0" expanded="false" />
-                <element signature="e#2817#2818#0" expanded="false" />
-                <element signature="e#2878#2879#0" expanded="false" />
-                <element signature="e#2947#2948#0" expanded="false" />
-                <element signature="e#2980#2981#0" expanded="false" />
-                <element signature="e#3061#3062#0" expanded="false" />
-                <element signature="e#3100#3101#0" expanded="false" />
-                <element signature="e#3168#3169#0" expanded="false" />
-                <element signature="e#3200#3201#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Config.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/helper/Config.java">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="176">
-              <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
-              <folding />
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -116,21 +103,11 @@
       <file leaf-file-name="DBHelper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/db/DBHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+            <state relative-caret-position="44">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="false" />
+                <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="doc_list.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/doc_list.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1824">
-              <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -195,15 +172,15 @@
         <option value="$PROJECT_DIR$/web/h.html" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/model/ErrorModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/db/DBHelper.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/db_info.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/helper/Config.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/doc_list.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/db/implementation/DBHelperImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/MedicineModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/servlet/DocListServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/api/MedecineService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/MedicineModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/db/implementation/DBHelperImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/db/DBHelper.java" />
       </list>
     </option>
   </component>
@@ -233,7 +210,32 @@
     </option>
   </component>
   <component name="MavenProjectNavigator">
-    <treeState />
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="ISSD_3_JAVA_EE" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="ISSD_3_JAVA_EE" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Lifecycle" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="27" />
@@ -1094,7 +1096,7 @@
       <workItem from="1478908372720" duration="6846000" />
       <workItem from="1479025855273" duration="3136000" />
       <workItem from="1479299045174" duration="3543000" />
-      <workItem from="1479334359874" duration="3493000" />
+      <workItem from="1479334359874" duration="4451000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1478827289471</created>
@@ -1142,16 +1144,16 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58832000" />
+    <option name="totallyTimeSpent" value="59790000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.496875" sideWeight="0.50292826" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328125" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24743778" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24743778" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1169,7 +1171,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.496875" sideWeight="0.49707174" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19253294" sideWeight="0.471875" order="7" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19253294" sideWeight="0.471875" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19253294" sideWeight="0.528125" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
@@ -1224,7 +1226,7 @@
         <state relative-caret-position="400">
           <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1241,17 +1243,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1280">
           <caret line="101" column="26" selection-start-line="101" selection-start-column="26" selection-end-line="101" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1125#1126#0" expanded="false" />
-            <element signature="e#1159#1160#0" expanded="false" />
-            <element signature="e#1587#1588#0" expanded="false" />
-            <element signature="e#1676#1677#0" expanded="false" />
-            <element signature="e#1746#1747#0" expanded="false" />
-            <element signature="e#1779#1780#0" expanded="false" />
-            <element signature="e#2370#2371#0" expanded="false" />
-            <element signature="e#2454#2455#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1280,7 +1272,7 @@
         <state relative-caret-position="528">
           <caret line="41" column="9" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1297,17 +1289,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1616">
           <caret line="101" column="26" selection-start-line="101" selection-start-column="26" selection-end-line="101" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1125#1126#0" expanded="false" />
-            <element signature="e#1159#1160#0" expanded="false" />
-            <element signature="e#1587#1588#0" expanded="false" />
-            <element signature="e#1676#1677#0" expanded="false" />
-            <element signature="e#1746#1747#0" expanded="false" />
-            <element signature="e#1779#1780#0" expanded="false" />
-            <element signature="e#2370#2371#0" expanded="false" />
-            <element signature="e#2454#2455#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1323,17 +1305,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1125#1126#0" expanded="false" />
-            <element signature="e#1159#1160#0" expanded="false" />
-            <element signature="e#1587#1588#0" expanded="false" />
-            <element signature="e#1676#1677#0" expanded="false" />
-            <element signature="e#1746#1747#0" expanded="false" />
-            <element signature="e#1779#1780#0" expanded="false" />
-            <element signature="e#2370#2371#0" expanded="false" />
-            <element signature="e#2454#2455#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1342,19 +1314,7 @@
         <state relative-caret-position="768">
           <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2506#2507#0" expanded="false" />
-            <element signature="e#2531#2532#0" expanded="false" />
-            <element signature="e#2592#2593#0" expanded="false" />
-            <element signature="e#2646#2647#0" expanded="false" />
-            <element signature="e#2817#2818#0" expanded="false" />
-            <element signature="e#2878#2879#0" expanded="false" />
-            <element signature="e#2947#2948#0" expanded="false" />
-            <element signature="e#2980#2981#0" expanded="false" />
-            <element signature="e#3061#3062#0" expanded="false" />
-            <element signature="e#3100#3101#0" expanded="false" />
-            <element signature="e#3168#3169#0" expanded="false" />
-            <element signature="e#3200#3201#0" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1363,17 +1323,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1125#1126#0" expanded="false" />
-            <element signature="e#1159#1160#0" expanded="false" />
-            <element signature="e#1587#1588#0" expanded="false" />
-            <element signature="e#1676#1677#0" expanded="false" />
-            <element signature="e#1746#1747#0" expanded="false" />
-            <element signature="e#1779#1780#0" expanded="false" />
-            <element signature="e#2370#2371#0" expanded="false" />
-            <element signature="e#2454#2455#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1382,19 +1332,7 @@
         <state relative-caret-position="768">
           <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2506#2507#0" expanded="false" />
-            <element signature="e#2531#2532#0" expanded="false" />
-            <element signature="e#2592#2593#0" expanded="false" />
-            <element signature="e#2646#2647#0" expanded="false" />
-            <element signature="e#2817#2818#0" expanded="false" />
-            <element signature="e#2878#2879#0" expanded="false" />
-            <element signature="e#2947#2948#0" expanded="false" />
-            <element signature="e#2980#2981#0" expanded="false" />
-            <element signature="e#3061#3062#0" expanded="false" />
-            <element signature="e#3100#3101#0" expanded="false" />
-            <element signature="e#3168#3169#0" expanded="false" />
-            <element signature="e#3200#3201#0" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1452,19 +1390,7 @@
         <state relative-caret-position="64">
           <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2506#2507#0" expanded="false" />
-            <element signature="e#2531#2532#0" expanded="false" />
-            <element signature="e#2592#2593#0" expanded="false" />
-            <element signature="e#2646#2647#0" expanded="false" />
-            <element signature="e#2817#2818#0" expanded="false" />
-            <element signature="e#2878#2879#0" expanded="false" />
-            <element signature="e#2947#2948#0" expanded="false" />
-            <element signature="e#2980#2981#0" expanded="false" />
-            <element signature="e#3061#3062#0" expanded="false" />
-            <element signature="e#3100#3101#0" expanded="false" />
-            <element signature="e#3168#3169#0" expanded="false" />
-            <element signature="e#3200#3201#0" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1503,19 +1429,7 @@
         <state relative-caret-position="304">
           <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2506#2507#0" expanded="false" />
-            <element signature="e#2531#2532#0" expanded="false" />
-            <element signature="e#2592#2593#0" expanded="false" />
-            <element signature="e#2646#2647#0" expanded="false" />
-            <element signature="e#2817#2818#0" expanded="false" />
-            <element signature="e#2878#2879#0" expanded="false" />
-            <element signature="e#2947#2948#0" expanded="false" />
-            <element signature="e#2980#2981#0" expanded="false" />
-            <element signature="e#3061#3062#0" expanded="false" />
-            <element signature="e#3100#3101#0" expanded="false" />
-            <element signature="e#3168#3169#0" expanded="false" />
-            <element signature="e#3200#3201#0" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1566,19 +1480,7 @@
         <state relative-caret-position="323">
           <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2506#2507#0" expanded="false" />
-            <element signature="e#2531#2532#0" expanded="false" />
-            <element signature="e#2592#2593#0" expanded="false" />
-            <element signature="e#2646#2647#0" expanded="false" />
-            <element signature="e#2817#2818#0" expanded="false" />
-            <element signature="e#2878#2879#0" expanded="false" />
-            <element signature="e#2947#2948#0" expanded="false" />
-            <element signature="e#2980#2981#0" expanded="false" />
-            <element signature="e#3061#3062#0" expanded="false" />
-            <element signature="e#3100#3101#0" expanded="false" />
-            <element signature="e#3168#3169#0" expanded="false" />
-            <element signature="e#3200#3201#0" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1674,56 +1576,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/db/DBHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/db/implementation/DBHelperImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="69" column="46" selection-start-line="69" selection-start-column="46" selection-end-line="69" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1125#1126#0" expanded="false" />
-            <element signature="e#1159#1160#0" expanded="false" />
-            <element signature="e#1587#1588#0" expanded="false" />
-            <element signature="e#1676#1677#0" expanded="false" />
-            <element signature="e#1746#1747#0" expanded="false" />
-            <element signature="e#1779#1780#0" expanded="false" />
-            <element signature="e#2370#2371#0" expanded="false" />
-            <element signature="e#2454#2455#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/MedicineModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="44" column="31" selection-start-line="44" selection-start-column="31" selection-end-line="44" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2506#2507#0" expanded="false" />
-            <element signature="e#2531#2532#0" expanded="false" />
-            <element signature="e#2592#2593#0" expanded="false" />
-            <element signature="e#2646#2647#0" expanded="false" />
-            <element signature="e#2817#2818#0" expanded="false" />
-            <element signature="e#2878#2879#0" expanded="false" />
-            <element signature="e#2947#2948#0" expanded="false" />
-            <element signature="e#2980#2981#0" expanded="false" />
-            <element signature="e#3061#3062#0" expanded="false" />
-            <element signature="e#3100#3101#0" expanded="false" />
-            <element signature="e#3168#3169#0" expanded="false" />
-            <element signature="e#3200#3201#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/servlet/DocListServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1056">
@@ -1748,6 +1600,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/MedicineModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/db/DBHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/db/implementation/DBHelperImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
           <folding />
         </state>
       </provider>

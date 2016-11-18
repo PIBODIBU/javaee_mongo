@@ -5,14 +5,12 @@ import com.mongodb.MongoClient;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import com.mongodb.client.MongoIterable;
-import com.sun.istack.internal.Nullable;
 import db.DBHelper;
 import helper.Config;
 import model.MedicineModel;
 import org.bson.Document;
 import org.bson.types.ObjectId;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 
 public class DBHelperImpl implements DBHelper {
@@ -26,7 +24,6 @@ public class DBHelperImpl implements DBHelper {
         createCollection();
     }
 
-    @Nullable
     public MongoClient createConnection() {
         return mongoClient = new MongoClient(Config.DATABASE_HOST, Config.DATABASE_PORT); // Create new instance of Mongo client
     }
@@ -37,7 +34,6 @@ public class DBHelperImpl implements DBHelper {
         }
     }
 
-    @Nullable
     public MongoClient getClient() {
         return mongoClient;
     }
@@ -52,17 +48,14 @@ public class DBHelperImpl implements DBHelper {
         return getCollection();
     }
 
-    @Nullable
     public MongoDatabase getDatabase() {
         return db = mongoClient.getDatabase(Config.DATABASE_NAME); // Get database
     }
 
-    @Nullable
     public MongoCollection<Document> getCollection() {
         return collection;
     }
 
-    @Nullable
     public LinkedList<MedicineModel> getAllDocuments() {
         LinkedList<MedicineModel> documents = new LinkedList<MedicineModel>();
 
