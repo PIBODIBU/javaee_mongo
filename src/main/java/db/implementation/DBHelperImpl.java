@@ -2,6 +2,7 @@ package db.implementation;
 
 import com.mongodb.Block;
 import com.mongodb.MongoClient;
+import com.mongodb.MongoClientURI;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import com.mongodb.client.MongoIterable;
@@ -25,7 +26,8 @@ public class DBHelperImpl implements DBHelper {
     }
 
     public MongoClient createConnection() {
-        return mongoClient = new MongoClient(Config.DATABASE_HOST, Config.DATABASE_PORT); // Create new instance of Mongo client
+//        return mongoClient = new MongoClient(Config.DATABASE_HOST, Config.DATABASE_PORT); // Create new instance of Mongo client
+        return mongoClient = new MongoClient(new MongoClientURI(Config.MONGO_URI)); // Create new instance of Mongo client
     }
 
     public void closeConnection() {
