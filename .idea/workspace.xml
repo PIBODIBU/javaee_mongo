@@ -2,50 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a62a1b9c-fd0b-41da-ba5c-1dc68d6e9651" name="Default" comment="New API endpoints">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT.war" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/classes/api/MedecineService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/classes/db/DBHelper.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/classes/db/implementation/DBHelperImpl$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/classes/db/implementation/DBHelperImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/classes/helper/Config$DB.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/classes/helper/Config.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/classes/model/ErrorModel.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/classes/model/MedicineModel.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/classes/servlet/DocListServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/classes/servlet/InfoServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/lib/activation-1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/lib/asm-3.3.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/lib/jackson-core-asl-1.9.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/lib/jackson-jaxrs-1.9.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/lib/jackson-mapper-asl-1.9.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/lib/jackson-xc-1.9.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/lib/javaee-api-7.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/lib/javax.mail-1.5.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/lib/jaxb-api-2.2.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/lib/jaxb-impl-2.2.3-1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/lib/jersey-bundle-1.19.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/lib/jersey-core-1.19.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/lib/jersey-json-1.19.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/lib/jersey-multipart-1.19.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/lib/jersey-server-1.19.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/lib/jettison-1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/lib/json-20160212.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/lib/jsr311-api-1.1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/lib/mimepull-1.9.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/lib/mongo-java-driver-3.3.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/lib/stax-api-1.0-2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/WEB-INF/web.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/db_info.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-java-ee-1.0-SNAPSHOT/doc_list.jsp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/db/DBHelper.class" afterPath="$PROJECT_DIR$/target/classes/db/DBHelper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/db/implementation/DBHelperImpl$1.class" afterPath="$PROJECT_DIR$/target/classes/db/implementation/DBHelperImpl$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/db/implementation/DBHelperImpl.class" afterPath="$PROJECT_DIR$/target/classes/db/implementation/DBHelperImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/model/MedicineModel.class" afterPath="$PROJECT_DIR$/target/classes/model/MedicineModel.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/db/DBHelper.java" afterPath="$PROJECT_DIR$/src/main/java/db/DBHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/db/implementation/DBHelperImpl.java" afterPath="$PROJECT_DIR$/src/main/java/db/implementation/DBHelperImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/model/MedicineModel.java" afterPath="$PROJECT_DIR$/src/main/java/model/MedicineModel.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -91,8 +48,8 @@
       <file leaf-file-name="MedicineModel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/model/MedicineModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            <state relative-caret-position="144">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -210,32 +167,7 @@
     </option>
   </component>
   <component name="MavenProjectNavigator">
-    <treeState>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="ISSD_3_JAVA_EE" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="ISSD_3_JAVA_EE" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Lifecycle" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
-        </PATH_ELEMENT>
-      </PATH>
-    </treeState>
+    <treeState />
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="27" />
@@ -1096,7 +1028,7 @@
       <workItem from="1478908372720" duration="6846000" />
       <workItem from="1479025855273" duration="3136000" />
       <workItem from="1479299045174" duration="3543000" />
-      <workItem from="1479334359874" duration="4451000" />
+      <workItem from="1479334359874" duration="4776000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1478827289471</created>
@@ -1144,7 +1076,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59790000" />
+    <option name="totallyTimeSpent" value="60115000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
@@ -1153,7 +1085,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.496875" sideWeight="0.50292826" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328125" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24743778" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24743778" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1604,19 +1536,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/MedicineModel.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/db/DBHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="44">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/db/DBHelper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/MedicineModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
+        <state relative-caret-position="144">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
