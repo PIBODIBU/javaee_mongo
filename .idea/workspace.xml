@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a62a1b9c-fd0b-41da-ba5c-1dc68d6e9651" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Procfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -1101,7 +1100,7 @@
       <workItem from="1479025855273" duration="3136000" />
       <workItem from="1479299045174" duration="3543000" />
       <workItem from="1479334359874" duration="5213000" />
-      <workItem from="1479475767807" duration="998000" />
+      <workItem from="1479475767807" duration="1017000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1478827289471</created>
@@ -1159,11 +1158,18 @@
       <option name="project" value="LOCAL" />
       <updated>1479476497398</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Procfile added">
+      <created>1479476798346</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1479476798346</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61550000" />
+    <option name="totallyTimeSpent" value="61569000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
@@ -1230,7 +1236,8 @@
     <MESSAGE value="New API endpoints" />
     <MESSAGE value="Nullable annotations removed" />
     <MESSAGE value="New db config" />
-    <option name="LAST_COMMIT_MESSAGE" value="New db config" />
+    <MESSAGE value="Procfile added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Procfile added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
