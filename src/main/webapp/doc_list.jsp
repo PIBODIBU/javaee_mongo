@@ -23,6 +23,24 @@
 <%LinkedList<MedicineModel> documents = (LinkedList<MedicineModel>) request.getAttribute(DocListServlet.ATTR_DOC_LIST);%>
 
 <style>
+    table {
+        width: 90%;
+    }
+
+    .table-td {
+        word-wrap: break-word; /* All browsers since IE 5.5+ */
+        overflow-wrap: break-word; /* Renamed property in CSS3 draft spec */
+        white-space: normal;
+    }
+
+    .table-td-controls {
+    }
+
+    .td-wrapper {
+        height: 100px;
+        overflow: auto;
+    }
+
     .mdl-layout__content {
         width: 100%;
         max-width: 100%;
@@ -91,7 +109,7 @@
         <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
             <thead>
             <tr>
-                <th class="mdl-data-table__cell--non-numeric">
+                <th class="mdl-data-table__cell--non-numeric"> Дії
                 </th>
                 <th class="mdl-data-table__cell--non-numeric"><%=Config.DB.COLUMN_ID_HUMAN%>
                 </th>
@@ -114,7 +132,7 @@
                     }
             %>
             <tr>
-                <td class="mdl-data-table__cell--non-numeric">
+                <td class="mdl-data-table__cell--non-numeric table-td-controls">
                     <form action="${pageContext.request.contextPath}/" method="post">
                         <input type="hidden" name="<%=DocListServlet.PARAM_ACTION%>"
                                value="<%=DocListServlet.ACTION_DELETE%>">
@@ -136,28 +154,22 @@
                         <i class="material-icons">edit</i>
                     </button>
                 </td>
-                <td class="mdl-data-table__cell--non-numeric">
+                <td class="mdl-data-table__cell--non-numeric table-td">
                     <%=model.getId()%>
                 </td>
-                <td class="mdl-data-table__cell--non-numeric">
-                    <div style="width:150px; overflow: hidden">
-                        <span><%=model.getMedicineName()%></span>
+                <td class="mdl-data-table__cell--non-numeric table-td">
+                    <%=model.getMedicineName()%>
+                </td>
+                <td class="mdl-data-table__cell--non-numeric table-td">
+                    <div class="td-wrapper">
+                        <%=model.getIndication()%>
                     </div>
                 </td>
-                <td class="mdl-data-table__cell--non-numeric">
-                    <div style="width:150px; overflow: hidden">
-                        <span><%=model.getIndication()%></span>
-                    </div>
+                <td class="mdl-data-table__cell--non-numeric table-td">
+                    <%=model.getContraindication()%>
                 </td>
-                <td class="mdl-data-table__cell--non-numeric">
-                    <div style="width:150px; overflow: hidden">
-                        <span><%=model.getContraindication()%></span>
-                    </div>
-                </td>
-                <td class="mdl-data-table__cell--non-numeric">
-                    <div style="width:150px; overflow: hidden">
-                        <span><%=model.getSalesForm()%></span>
-                    </div>
+                <td class="mdl-data-table__cell--non-numeric table-td">
+                    <%=model.getSalesForm()%>
                 </td>
             </tr>
             <%
