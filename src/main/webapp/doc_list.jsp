@@ -3,9 +3,8 @@
 <%@ page import="helper.Config" %>
 <%@ page import="model.MedicineModel" %>
 <%@ page import="servlet.DocListServlet" %>
-<%@ page import="java.util.LinkedList" %>
 <%@ page import="servlet.InfoServlet" %>
-<%@ page import="org.bson.Document" %>
+<%@ page import="java.util.LinkedList" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" %>
 
 <html>
@@ -135,13 +134,7 @@
                         continue;
                     }
             %>
-            <tr onclick="showDialogInfoDocument(
-                    '<%=model.getId().toString()%>',
-                    '<%=model.getMedicineName()%>',
-                    '<%=model.getIndication().replaceAll("'", "\\\\'")%>',
-                    '<%=model.getContraindication()%>',
-                    '<%=model.getSalesForm()%>'
-                    )">
+            <tr>
                 <td class="mdl-data-table__cell--non-numeric table-td-controls">
                     <form action="${pageContext.request.contextPath}/" method="post">
                         <input type="hidden" name="<%=DocListServlet.PARAM_ACTION%>"
@@ -156,12 +149,20 @@
                     <button class="mdl-button mdl-js-button mdl-button--icon mdl-color-text--grey-500 show-modal-dialog-edit"
                             onclick="showDialogEditDocument(
                                     '<%=model.getId().toString()%>',
-                                    '<%=model.getMedicineName()%>',
-                                    '<%=model.getIndication()%>',
-                                    '<%=model.getContraindication()%>',
-                                    '<%=model.getSalesForm()%>'
-                                    )">
+                                    '<%=model.getMedicineName().replaceAll("'", "\\\\'")%>',
+                                    '<%=model.getIndication().replaceAll("'", "\\\\'")%>',
+                                    '<%=model.getContraindication().replaceAll("'", "\\\\'")%>',
+                                    '<%=model.getSalesForm().replaceAll("'", "\\\\'")%>')">
                         <i class="material-icons">edit</i>
+                    </button>
+                    <button class="mdl-button mdl-js-button mdl-button--icon mdl-color-text--grey-500 show-modal-dialog-edit"
+                            onclick="showDialogInfoDocument(
+                                    '<%=model.getId().toString()%>',
+                                    '<%=model.getMedicineName().replaceAll("'", "\\\\'")%>',
+                                    '<%=model.getIndication().replaceAll("'", "\\\\'")%>',
+                                    '<%=model.getContraindication().replaceAll("'", "\\\\'")%>',
+                                    '<%=model.getSalesForm().replaceAll("'", "\\\\'")%>')">
+                        <i class="material-icons">info</i>
                     </button>
                 </td>
                 <td class="mdl-data-table__cell--non-numeric table-td">
@@ -207,14 +208,14 @@
                                type="text"
                                name="<%=DocListServlet.PARAM_DOCUMENT_NAME%>"
                                id="sample1">
-                        <label class="mdl-textfield__label" for="sample3">Назва</label>
+                        <label class="mdl-textfield__label" for="sample1">Назва</label>
                     </div>
                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                         <input name="<%=DocListServlet.PARAM_DOCUMENT_INDICATION%>"
                                class="mdl-textfield__input"
                                type="text"
                                id="sample2">
-                        <label class="mdl-textfield__label" for="sample3">Показання</label>
+                        <label class="mdl-textfield__label" for="sample2">Показання</label>
                     </div>
                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                         <input name="<%=DocListServlet.PARAM_DOCUMENT_CONTRAINDICATION%>"
@@ -228,7 +229,7 @@
                                class="mdl-textfield__input"
                                type="text"
                                id="sample4">
-                        <label class="mdl-textfield__label" for="sample3">Форма продажу</label>
+                        <label class="mdl-textfield__label" for="sample4">Форма продажу</label>
                     </div>
                 </div>
 
@@ -260,19 +261,22 @@
             <div class="mdl-dialog__content">
                 <h3 id="dialog_info_model_name">Update</h3>
 
-                <h5><%=Config.DB.COLUMN_INDICATION%></h5>
+                <h5><%=Config.DB.COLUMN_INDICATION%>
+                </h5>
                 <h7 id="dialog_info_model_indication">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Aenan convallis.
                 </h7>
 
-                <h5><%=Config.DB.COLUMN_CONTRAINDICATION%></h5>
+                <h5><%=Config.DB.COLUMN_CONTRAINDICATION%>
+                </h5>
                 <h7 id="dialog_info_model_contraindication">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Aenan convallis.
                 </h7>
 
-                <h5><%=Config.DB.COLUMN_SALES_FORM%></h5>
+                <h5><%=Config.DB.COLUMN_SALES_FORM%>
+                </h5>
                 <h7 id="dialog_info_model_sales_form">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Aenan convallis.

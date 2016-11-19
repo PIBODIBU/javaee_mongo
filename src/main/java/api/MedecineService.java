@@ -73,7 +73,7 @@ public class MedecineService {
         MedicineModel model = new MedicineModel(new ObjectId(docId), name, indication, contraindication, salesForm);
         dbHelper.updateDocument(docId, model);
 
-        return Response.status(200).entity(model).build();
+        return Response.status(200).entity(new ErrorModel(false)).build();
     }
 
     @POST

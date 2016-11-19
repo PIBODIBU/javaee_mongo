@@ -26,8 +26,8 @@ public class DBHelperImpl implements DBHelper {
     }
 
     public MongoClient createConnection() {
-//        return mongoClient = new MongoClient(Config.DATABASE_HOST, Config.DATABASE_PORT); // Create new instance of Mongo client
-        return mongoClient = new MongoClient(new MongoClientURI(Config.MONGO_URI)); // Create new instance of Mongo client
+        return mongoClient = new MongoClient(Config.DATABASE_HOST, Config.DATABASE_PORT); // Create new instance of Mongo client
+//        return mongoClient = new MongoClient(new MongoClientURI(Config.MONGO_URI)); // Create new instance of Mongo client
     }
 
     public void closeConnection() {
