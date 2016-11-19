@@ -58,6 +58,10 @@
         bottom: 0;
         margin: 36px;
     }
+
+    .dialog-info {
+        width: 80%;
+    }
 </style>
 
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
@@ -131,7 +135,13 @@
                         continue;
                     }
             %>
-            <tr>
+            <tr onclick="showDialogInfoDocument(
+                    '<%=model.getId().toString()%>',
+                    '<%=model.getMedicineName()%>',
+                    '<%=model.getIndication().replaceAll("'", "\\\\'")%>',
+                    '<%=model.getContraindication()%>',
+                    '<%=model.getSalesForm()%>'
+                    )">
                 <td class="mdl-data-table__cell--non-numeric table-td-controls">
                     <form action="${pageContext.request.contextPath}/" method="post">
                         <input type="hidden" name="<%=DocListServlet.PARAM_ACTION%>"
@@ -166,10 +176,14 @@
                     </div>
                 </td>
                 <td class="mdl-data-table__cell--non-numeric table-td">
-                    <%=model.getContraindication()%>
+                    <div class="td-wrapper">
+                        <%=model.getContraindication()%>
+                    </div>
                 </td>
                 <td class="mdl-data-table__cell--non-numeric table-td">
-                    <%=model.getSalesForm()%>
+                    <div class="td-wrapper">
+                        <%=model.getSalesForm()%>
+                    </div>
                 </td>
             </tr>
             <%
@@ -240,6 +254,53 @@
             dialog.querySelector('.close').addEventListener('click', function () {
                 dialog.close();
             });
+        </script>
+
+        <dialog class="mdl-dialog dialog-info" id="dialog-info">
+            <div class="mdl-dialog__content">
+                <h3 id="dialog_info_model_name">Update</h3>
+
+                <h5><%=Config.DB.COLUMN_INDICATION%></h5>
+                <h7 id="dialog_info_model_indication">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Aenan convallis.
+                </h7>
+
+                <h5><%=Config.DB.COLUMN_CONTRAINDICATION%></h5>
+                <h7 id="dialog_info_model_contraindication">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Aenan convallis.
+                </h7>
+
+                <h5><%=Config.DB.COLUMN_SALES_FORM%></h5>
+                <h7 id="dialog_info_model_sales_form">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Aenan convallis.
+                </h7>
+
+                <div class="mdl-dialog__actions">
+                    <button type="button" class="mdl-button close">OK</button>
+                </div>
+            </div>
+        </dialog>
+        <script>
+            function showDialogInfoDocument(id, name, indication, contraindication, salesForm) {
+                var dialog = document.getElementById('dialog-info');
+                if (!dialog.showModal) {
+                    dialogPolyfill.registerDialog(dialog);
+                }
+
+                dialog.querySelector('.close').addEventListener('click', function () {
+                    dialog.close();
+                });
+
+                document.getElementById('dialog_info_model_name').innerHTML = name;
+                document.getElementById('dialog_info_model_indication').innerHTML = indication;
+                document.getElementById('dialog_info_model_contraindication').innerHTML = contraindication;
+                document.getElementById('dialog_info_model_sales_form').innerHTML = salesForm;
+
+                dialog.showModal();
+            }
         </script>
 
         <dialog class="mdl-dialog" id="dialog-edit">

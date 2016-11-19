@@ -23,6 +23,24 @@
 <%LinkedList<MedicineModel> documents = (LinkedList<MedicineModel>) request.getAttribute(DocListServlet.ATTR_DOC_LIST);%>
 
 <style>
+    table {
+        width: 90%;
+    }
+
+    .table-td {
+        word-wrap: break-word; /* All browsers since IE 5.5+ */
+        overflow-wrap: break-word; /* Renamed property in CSS3 draft spec */
+        white-space: normal;
+    }
+
+    .table-td-controls {
+    }
+
+    .td-wrapper {
+        height: 100px;
+        overflow: auto;
+    }
+
     .mdl-layout__content {
         width: 100%;
         max-width: 100%;
@@ -39,6 +57,10 @@
         right: 0;
         bottom: 0;
         margin: 36px;
+    }
+
+    .dialog-info {
+        width: 80%;
     }
 </style>
 
@@ -91,7 +113,7 @@
         <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
             <thead>
             <tr>
-                <th class="mdl-data-table__cell--non-numeric">
+                <th class="mdl-data-table__cell--non-numeric"> Дії
                 </th>
                 <th class="mdl-data-table__cell--non-numeric"><%=Config.DB.COLUMN_ID_HUMAN%>
                 </th>
@@ -113,8 +135,14 @@
                         continue;
                     }
             %>
-            <tr>
-                <td class="mdl-data-table__cell--non-numeric">
+            <tr onclick="showDialogInfoDocument(
+                    '<%=model.getId().toString()%>',
+                    '<%=model.getMedicineName()%>',
+                    '<%=model.getIndication().replaceAll("'", "\\\\'")%>',
+                    '<%=model.getContraindication()%>',
+                    '<%=model.getSalesForm()%>'
+                    )">
+                <td class="mdl-data-table__cell--non-numeric table-td-controls">
                     <form action="${pageContext.request.contextPath}/" method="post">
                         <input type="hidden" name="<%=DocListServlet.PARAM_ACTION%>"
                                value="<%=DocListServlet.ACTION_DELETE%>">
@@ -136,27 +164,25 @@
                         <i class="material-icons">edit</i>
                     </button>
                 </td>
-                <td class="mdl-data-table__cell--non-numeric">
+                <td class="mdl-data-table__cell--non-numeric table-td">
                     <%=model.getId()%>
                 </td>
-                <td class="mdl-data-table__cell--non-numeric">
-                    <div style="width:150px; overflow: hidden">
-                        <span><%=model.getMedicineName()%></span>
+                <td class="mdl-data-table__cell--non-numeric table-td">
+                    <%=model.getMedicineName()%>
+                </td>
+                <td class="mdl-data-table__cell--non-numeric table-td">
+                    <div class="td-wrapper">
+                        <%=model.getIndication()%>
                     </div>
                 </td>
-                <td class="mdl-data-table__cell--non-numeric">
-                    <div style="width:150px; overflow: hidden">
-                        <span><%=model.getIndication()%></span>
+                <td class="mdl-data-table__cell--non-numeric table-td">
+                    <div class="td-wrapper">
+                        <%=model.getContraindication()%>
                     </div>
                 </td>
-                <td class="mdl-data-table__cell--non-numeric">
-                    <div style="width:150px; overflow: hidden">
-                        <span><%=model.getContraindication()%></span>
-                    </div>
-                </td>
-                <td class="mdl-data-table__cell--non-numeric">
-                    <div style="width:150px; overflow: hidden">
-                        <span><%=model.getSalesForm()%></span>
+                <td class="mdl-data-table__cell--non-numeric table-td">
+                    <div class="td-wrapper">
+                        <%=model.getSalesForm()%>
                     </div>
                 </td>
             </tr>
@@ -228,6 +254,53 @@
             dialog.querySelector('.close').addEventListener('click', function () {
                 dialog.close();
             });
+        </script>
+
+        <dialog class="mdl-dialog dialog-info" id="dialog-info">
+            <div class="mdl-dialog__content">
+                <h3 id="dialog_info_model_name">Update</h3>
+
+                <h5><%=Config.DB.COLUMN_INDICATION%></h5>
+                <h7 id="dialog_info_model_indication">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Aenan convallis.
+                </h7>
+
+                <h5><%=Config.DB.COLUMN_CONTRAINDICATION%></h5>
+                <h7 id="dialog_info_model_contraindication">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Aenan convallis.
+                </h7>
+
+                <h5><%=Config.DB.COLUMN_SALES_FORM%></h5>
+                <h7 id="dialog_info_model_sales_form">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Aenan convallis.
+                </h7>
+
+                <div class="mdl-dialog__actions">
+                    <button type="button" class="mdl-button close">OK</button>
+                </div>
+            </div>
+        </dialog>
+        <script>
+            function showDialogInfoDocument(id, name, indication, contraindication, salesForm) {
+                var dialog = document.getElementById('dialog-info');
+                if (!dialog.showModal) {
+                    dialogPolyfill.registerDialog(dialog);
+                }
+
+                dialog.querySelector('.close').addEventListener('click', function () {
+                    dialog.close();
+                });
+
+                document.getElementById('dialog_info_model_name').innerHTML = name;
+                document.getElementById('dialog_info_model_indication').innerHTML = indication;
+                document.getElementById('dialog_info_model_contraindication').innerHTML = contraindication;
+                document.getElementById('dialog_info_model_sales_form').innerHTML = salesForm;
+
+                dialog.showModal();
+            }
         </script>
 
         <dialog class="mdl-dialog" id="dialog-edit">
