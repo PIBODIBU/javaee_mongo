@@ -52,7 +52,7 @@
     }
 
     .mdl-button--fab {
-        position: absolute;
+        position: fixed;
         right: 0;
         bottom: 0;
         margin: 36px;
