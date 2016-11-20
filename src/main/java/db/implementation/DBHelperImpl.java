@@ -61,7 +61,17 @@ public class DBHelperImpl implements DBHelper {
     public LinkedList<MedicineModel> getAllDocuments() {
         LinkedList<MedicineModel> documents = new LinkedList<MedicineModel>();
 
-        for (Document document : getCollection().find()) {
+        for (Document document : getCollection().find().sort(new Document(Config.DB.COLUMN_NAME, 1))) {
+            documents.add(MedicineModel.fromMongoDocument(document));
+        }
+
+        return documents;
+    }
+
+    public LinkedList<MedicineModel> getAllDocuments(String sortFilter) {
+        LinkedList<MedicineModel> documents = new LinkedList<MedicineModel>();
+
+        for (Document document : getCollection().find().sort(new Document(sortFilter, 1))) {
             documents.add(MedicineModel.fromMongoDocument(document));
         }
 

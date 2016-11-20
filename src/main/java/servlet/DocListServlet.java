@@ -2,6 +2,7 @@ package servlet;
 
 import db.DBHelper;
 import db.implementation.DBHelperImpl;
+import helper.Config;
 import model.MedicineModel;
 import org.bson.Document;
 
@@ -68,10 +69,10 @@ public class DocListServlet extends HttpServlet {
         } else if (request.getParameter(PARAM_ACTION).equals(ACTION_SEARCH)) {
             LinkedList<MedicineModel> documents = dbHelper.getAllDocuments();
             LinkedList<MedicineModel> filteredDocuments = new LinkedList<MedicineModel>();
-            final String searchQuery = request.getParameter(PARAM_SEARCH_QUERY);
+            final String searchQuery = new String(request.getParameter(PARAM_SEARCH_QUERY).getBytes("iso-8859-1"), "UTF-8");
 
             for (MedicineModel model : documents) {
-                if (model.getMedicineName().contains(searchQuery)) {
+                if (model.getMedicineName().toLowerCase().contains(searchQuery.toLowerCase())) {
                     filteredDocuments.add(model);
                 }
             }

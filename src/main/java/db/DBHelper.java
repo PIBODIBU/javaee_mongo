@@ -25,6 +25,8 @@ public interface DBHelper {
 
     LinkedList<MedicineModel> getAllDocuments();
 
+    LinkedList<MedicineModel> getAllDocuments(String sortFilter);
+
     MedicineModel getDocumentById(final String id);
 
     void addDocument(final MedicineModel model);

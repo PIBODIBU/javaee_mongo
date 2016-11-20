@@ -52,7 +52,7 @@
     }
 
     .mdl-button--fab {
-        position: absolute;
+        position: fixed;
         right: 0;
         bottom: 0;
         margin: 36px;
@@ -86,7 +86,7 @@
                                type="text"
                                value="<%=request.getParameter(DocListServlet.PARAM_ACTION) == null?
                                "":request.getParameter(DocListServlet.PARAM_ACTION).equals(DocListServlet.ACTION_SEARCH)?
-                               request.getParameter(DocListServlet.PARAM_SEARCH_QUERY):""%>"
+                               new String(request.getParameter(DocListServlet.PARAM_SEARCH_QUERY).getBytes("iso-8859-1"), "UTF-8"):""%>"
                                name="<%=DocListServlet.PARAM_SEARCH_QUERY%>"
                                id="fixed-header-drawer-exp">
                     </form>
